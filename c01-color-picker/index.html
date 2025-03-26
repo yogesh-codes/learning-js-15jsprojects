@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Random Color</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+
+        <div class="logo">Random Color Generator</div>
+        <div class="options-radiogroup" role="radiogroup">
+            
+            <label for="option-simple">
+                <input type="radio" id="option-simple" name="option" value="option-simple">
+            Simple
+            </label>
+            
+            
+            <label for="option-hex">
+                <input type="radio" id="option-hex" name="option" value="option-hex">
+                
+            Hex
+            </label>
+            
+
+        </div>
+    </header>
+
+    <section class="container">
+            <h1 class="title">Your random color is <span class="generated-color-code" id="generated-color-code">#678C8B</span></h1>
+            
+            <button id="submit-button" class="btn btn-hero">GENERATE RANDOM COLOR</button>
+            <button class="button-copy">COPY</button>
+    </section>
+    <footer>
+        This is Footer
+    </footer>
+
+    
+    <script src="index.js"/>
+</body>
+</html>
