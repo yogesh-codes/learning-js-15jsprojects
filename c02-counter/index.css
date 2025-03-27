@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Karla",'Times New Roman', Times, serif;
+    font-size: 1rem;
+}   
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 80vh;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+
+.current-count {
+    font-size: 4rem;
+}
+
+.button-items button{
+    text-transform: uppercase;
+    
+}
