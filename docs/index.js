@@ -1,6 +1,6 @@
 
 
-let is_mobile_navlinks_hidden=false;
+let is_mobile_navlinks_hidden=true;
 
 
 //DOM elements
