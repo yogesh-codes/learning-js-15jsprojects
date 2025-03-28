@@ -9,8 +9,8 @@
 }
 
 :root {
-    --color1:#303633;
-    --color2:#8BE8c8;
+    --color1:#114B5F;
+    --color2:#ade4f7;
     --color3:#4d6e75;
     --color4:#525771;
     --color5:#72526d;
@@ -47,88 +47,84 @@ a {
     color: unset;
 }
 
+/* -------------------------- */
+
 header {
-    padding: 1em 2em;
+    padding: 1em 1em;
+    background-color: var(--color2);
 }
-header.row1 {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-content: center;
-
-    width: 100%;
-    height: 5em;
-}
-
-
-.logo {
+.row1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1em;
 
-    width: 4em;
-    height: max(100%,fit-content);
-
+    background-color: var(--color2);
+}
+.logo {
+    font-size:1.5em ;
 }
 
 .navlinks-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
+    display: inline-flex;
     width: 100%;
     height: 100%;
-    
+
+    justify-content: flex-end;
 }
-
-
 .navlinks-list {
-    display: flex;
-    justify-content: space-between;
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 2em;
     align-items: center;
-    
-    width: max(16em,fit-content);
-    height: 100%;
+
 }
 
-nav ul li {
-    display: flex;
 
+.hamburger-svg-container {
+    display: none;
     justify-content: center;
     align-items: center;
-
-    width: 4em;
-    height: 2em;
-    text-align: center;
-}
-
-nav ul li:hover {
-    background-color: var(--color5);
+    
+    width: 2em;
+    
     
 }
 
-.hamburger-menu {
+header > .row2 {
     display: none;
 }
 
-
-.mobile-navlinks-container {
-    display: none;
-}
-
-@media (max-width: 480px) {
-    .navlinks-items{
+@media (max-width:768px) {
+    .navlinks-list {
         display: none;
     }
 
-
-    .hamburger-menu {
-        display:flex
+    .hamburger-svg-container {
+        display: inline-flex;
     }
 
-    .navlinks-container {
+    header > .row2 {
         display: flex;
         width: 100%;
-        height: max(fit-content,32em);
+        height: auto; 
     }
 
+    .mobile-navlinks-container {
+        display: inline-flex;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .mobile-navlinks-list {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
 }
+
