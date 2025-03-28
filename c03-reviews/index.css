@@ -41,6 +41,7 @@ body {
 
 main {
     padding: 0em 1em;
+    margin: 2em 0em;
 }
 
 ul {
@@ -72,7 +73,7 @@ button:hover {
     
 }
 
-/* DOM Elements */
+/* DOM Elements ------------------------------------*/
 
 header {
     display: flex;
