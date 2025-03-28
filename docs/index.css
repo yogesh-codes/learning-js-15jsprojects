@@ -133,9 +133,6 @@ header > .row2 {
 
     }
 
-    .hamburger-svg-container:hover {
-        transform: rotate(90deg);
-    }
 
     header > .row2 {
         display: flex;
@@ -149,12 +146,11 @@ header > .row2 {
     }
 
     .mobile-navlinks-container {
-        --myheight:8em;
 
         display: flex;
         width: 100%;
 
-        height: var(--myheight);
+        height: 0em; /*js sets to 8em auto*/
         overflow:hidden;
         
         transition: height .6s ease;
