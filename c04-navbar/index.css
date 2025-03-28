@@ -9,17 +9,16 @@
 }
 
 :root {
-    --color1:#114B5F;
+    --color1:#525771;
     --color2:#ade4f7;
     --color3:#4d6e75;
-    --color4:#525771;
     --color5:#72526d;
 
 }
 
 body {
-    background-color: var(--color4);
-    color: white;
+    background-color: var(--color1);
+    color: var(--color1);
 }
 
 ul {
@@ -33,7 +32,7 @@ img {
 }
 
 svg {
-    color: white;
+    color: var(--color1);
     width: 1.5em;
     aspect-ratio: 1/1;
 
@@ -46,6 +45,12 @@ a {
     text-decoration: none;
     color: unset;
 }
+
+/* Makes the entire block clickable and not just the text */
+ul li {
+    width: 100%;
+    height: 100%;
+} 
 
 /* -------------------------- */
 
@@ -71,15 +76,30 @@ header {
     height: 100%;
 
     justify-content: flex-end;
+    text-align: center;
+    gap: .4em;
 }
 .navlinks-list {
     display: inline-flex;
     justify-content: flex-start;
-    gap: 2em;
+    gap: 1em;
     align-items: center;
 
+    height: 100%;
 }
 
+.navlinks-list > li {
+    width: 5em;
+    height:100%;
+
+    border-radius: .2em;
+    padding: .3em;
+    }
+
+.navlinks-list > li:hover {
+    background-color: var(--color1);
+    color: white;
+}
 
 .hamburger-svg-container {
     display: none;
@@ -102,18 +122,33 @@ header > .row2 {
 
     .hamburger-svg-container {
         display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        transform: rotate 0deg;
+        transition: transform .6s ease;
+
+    }
+
+    .hamburger-svg-container:hover {
+        transform: rotate 90deg;
     }
 
     header > .row2 {
         display: flex;
-        width: 100%;
-        height: auto; 
+        width: 100%; 
+        height: fit-content;
+        
+        padding-top: .5em;
+
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .mobile-navlinks-container {
-        display: inline-flex;
+        display: flex;
         width: 100%;
-        height: auto;
+
 
     }
 
@@ -121,9 +156,21 @@ header > .row2 {
         display: inline-flex;
         flex-direction: column;
         width: 100%;
-        justify-content: center;
+        height: 6em;
+        justify-content: flex-start;
         text-align: center;
+        gap: .4em;
     }
+
+    .mobile-navlinks-list > li {
+        
+    }
+
+    .mobile-navlinks-list > li:hover {
+        background-color: var(--color1);
+        color: white;
+    }
+
 
     
 }
