@@ -1,0 +1,150 @@
+[
+    {
+      "category": "Main Course",
+      "dish_name": "Butter Chicken",
+      "description": "Classic North Indian dish with creamy tomato gravy and tender chicken",
+      "price_inr": 320,
+      "type": "nonveg"
+    },
+    {
+      "category": "Main Course",
+      "dish_name": "Paneer Butter Masala",
+      "description": "Soft paneer cubes in a rich buttery tomato-based gravy",
+      "price_inr": 280,
+      "type": "veg"
+    },
+    {
+      "category": "Main Course",
+      "dish_name": "Chole",
+      "description": "Spiced chickpea curry from Punjab, served with onion garnish",
+      "price_inr": 180,
+      "type": "veg"
+    },
+    {
+      "category": "Main Course",
+      "dish_name": "Dal Makhani",
+      "description": "Slow-cooked black lentils in a creamy tomato sauce",
+      "price_inr": 200,
+      "type": "veg"
+    },
+    {
+      "category": "Main Course",
+      "dish_name": "Chicken Chettinad",
+      "description": "Fiery and flavorful South Indian chicken curry",
+      "price_inr": 310,
+      "type": "nonveg"
+    },
+    {
+      "category": "Main Course",
+      "dish_name": "Avial",
+      "description": "Vegetable medley cooked in coconut and yogurt, Kerala-style",
+      "price_inr": 220,
+      "type": "veg"
+    },
+    {
+      "category": "Rice & Biryani",
+      "dish_name": "Vegetable Biryani",
+      "description": "Fragrant basmati rice with vegetables and aromatic spices",
+      "price_inr": 240,
+      "type": "veg"
+    },
+    {
+      "category": "Rice & Biryani",
+      "dish_name": "Chicken Biryani",
+      "description": "Layered basmati rice with marinated chicken and saffron",
+      "price_inr": 280,
+      "type": "nonveg"
+    },
+    {
+      "category": "Rice & Biryani",
+      "dish_name": "Jeera Rice",
+      "description": "Basmati rice tempered with cumin seeds and ghee",
+      "price_inr": 120,
+      "type": "veg"
+    },
+    {
+      "category": "Rice & Biryani",
+      "dish_name": "Curd Rice",
+      "description": "South Indian style rice with yogurt, tempered with mustard and curry leaves",
+      "price_inr": 100,
+      "type": "veg"
+    },
+    {
+      "category": "Breads",
+      "dish_name": "Garlic Naan",
+      "description": "Leavened tandoor bread topped with garlic and coriander",
+      "price_inr": 60,
+      "type": "veg"
+    },
+    {
+      "category": "Breads",
+      "dish_name": "Aloo Paratha",
+      "description": "Stuffed flatbread with spiced mashed potato, served with pickle and curd",
+      "price_inr": 90,
+      "type": "veg"
+    },
+    {
+      "category": "Snacks",
+      "dish_name": "Samosa",
+      "description": "Crispy pastry stuffed with spicy potato and peas",
+      "price_inr": 30,
+      "type": "veg"
+    },
+    {
+      "category": "Snacks",
+      "dish_name": "Vada Pav",
+      "description": "Spicy potato fritter in a bun with chutneys, Mumbai style",
+      "price_inr": 40,
+      "type": "veg"
+    },
+    {
+      "category": "Snacks",
+      "dish_name": "Pani Puri",
+      "description": "Hollow puris filled with spicy water, tamarind chutney, and potato",
+      "price_inr": 50,
+      "type": "veg"
+    },
+    {
+      "category": "Desserts",
+      "dish_name": "Gulab Jamun",
+      "description": "Deep-fried milk balls soaked in cardamom syrup",
+      "price_inr": 70,
+      "type": "veg"
+    },
+    {
+      "category": "Desserts",
+      "dish_name": "Rasgulla",
+      "description": "Soft and spongy cottage cheese balls in sugar syrup",
+      "price_inr": 80,
+      "type": "veg"
+    },
+    {
+      "category": "Desserts",
+      "dish_name": "Kheer",
+      "description": "Traditional Indian rice pudding with saffron and nuts",
+      "price_inr": 90,
+      "type": "veg"
+    },
+    {
+      "category": "Drinks",
+      "dish_name": "Masala Chai",
+      "description": "Spiced Indian tea brewed with milk and aromatic spices",
+      "price_inr": 30,
+      "type": "veg"
+    },
+    {
+      "category": "Drinks",
+      "dish_name": "Mango Lassi",
+      "description": "Refreshing yogurt-based mango drink",
+      "price_inr": 60,
+      "type": "veg"
+    },
+    {
+      "category": "Drinks",
+      "dish_name": "Filter Coffee",
+      "description": "Strong South Indian coffee brewed with chicory",
+      "price_inr": 40,
+      "type": "veg"
+    }
+  ]
+  
