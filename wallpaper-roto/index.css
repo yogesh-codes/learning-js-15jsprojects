@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Karla",'Times New Roman', Times, serif;
+    font-size: 1rem;
+
+    position: relative;
+    
+
+}
+
+:root {
+    --color-primary-dark:#6952a0;
+    --color-primary-light:#e7ddf7;
+
+    --color-neutral-dark: #55a2ff;
+    --color-neutral-light: #f8f7ff;
+
+    --color-secondary-dark:#414597;
+    --color-secondary-light:#b8b8ff;
+    --c5:#b8f3ff;
+
+    --color-dark-shadow:rgba(0,0,0,.1);
+}
+
+body {
+    background-color: var(--color-neutral-light);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    
+    justify-content: flex-start;
+    align-items: center;
+
+    
+}
+
+
+main {
+    padding: 0em 1em;
+    margin: 2em 0em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    border: 1px solis var(--color-neutral-light);
+}
+
+button {
+    border: none;
+    border-radius: .2em;
+    margin: 0px .2em;
+
+    background-color: var(--color-primary-dark);
+    color: white;
+
+    transition: background-color .15s ease-in , color .15s ease;
+}
+
+button:hover {
+    background-color: var(--color-primary-light);
+    color: black;
+    
+}
+
+/* DOM Elements ------------------------------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    width: 100%;
+    height: 5em;
+
+}
+
+.logo {
+    color: var(--color-primary-dark);
+    font-size: 2em;
+
+    margin: 0em .5em;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4em;
+}
+
+nav ul li {
+    position: relative;
+    
+}
+nav ul li::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    
+
+    padding: .2em;
+    width: 100%;
+    height: 100%;
+
+    
+    opacity: 0;    
+
+    background-color: orange;
+    
+    
+    mask-image:
+    linear-gradient(to top, transparent calc(100% - 1px),black calc(100% - 1px));
+    
+    
+    mask-composite:add;
+    mask-repeat: no-repeat;
+
+    
+    transition: opacity .15s ease;
+}
+nav ul li:hover::after {
+
+
+    /* background: linear-gradient(45deg,var(--color-primary-dark),var(--color-primary-light)); */
+    background-color: var(--color-primary-dark);
+    
+    opacity: 1;
+}
+
+:root {
+
+    --image-height:1000px;
+    
+    --aspect-ratio:1/1;
+    --og-height:600px;
+    --offset:calc( var(--image-height) - var(--og-height));
+
+    --current-background:0;
+    --next-background:0;
+
+
+}
+
+
+.image1-container {
+    position: relative;
+    background-color: #55a2ff;
+    
+
+    aspect-ratio: var(--aspect-ratio);
+    
+    
+    height: var(--og-height);
+    aspect-ratio: 1/1;
+    
+    overflow: hidden;
+
+
+    /* clip-path: inset(calc ((var(--image-height)- var(--height-after-clip) / 2)) 0% (var(--image-height)- var(--height-after-clip) / 2))  0%); */
+
+}
+
+
+
+.rotoimage-common {
+    background-image: var(--current-background);
+    height: var(--image-height);
+    aspect-ratio: var(--aspect-ratio);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    
+    position: absolute; /* Anchor for absolute children */
+    
+    
+    bottom:calc(var(--og-height) - (var(--image-height) / 2) - (var(--og-height) / 2));
+    right:calc(var(--og-height) - (var(--image-height) / 2) - (var(--og-height) / 2));
+    
+    /* transform: translate(600px,(var(--offset))); */
+
+
+
+    
+}
+
+.image1 {
+    filter: brightness(1);
+    
+    clip-path: ellipse(calc(var(--image-height) / 2) calc(var(--image-height) / 2) at 50% 50%);
+    
+    /* animation-name: roto */
+    animation-duration: 4s;
+    animation-delay: .2s;
+    /* animation-iteration-count: 1; */
+}
+
+.image2 {
+
+
+    filter: brightness(1);
+
+    clip-path: ellipse(calc(var(--image-height) / 4.5) calc(var(--image-height) / 4.5) at 50% 50%);
+
+    animation-duration: 4s;
+    animation-delay: .2s;
+    /* animation-iteration-count: 1; */
+  
+}
+
+
+.image3 {
+
+    clip-path: ellipse(calc(var(--image-height) / 6.3) calc(var(--image-height) / 6.3) at 50% 50%);
+
+    animation-duration: 4s;
+    animation-delay: .2s;
+    /* animation-iteration-count: 1; */
+
+}
+
+
+.roto-animation {
+    animation-name: roto;
+    animation-play-state: running;
+    
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes roto {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    40% {
+        filter:blur(1);
+    }
+    
+    80% {
+        transform: rotateZ(360deg);
+        background-size: auto var(--image-height);
+        background-image: var(--next-background);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+        background-size: auto var(--image-height);
+        background-image:var(--next-background);
+    
+    
+    }
+    
+}
