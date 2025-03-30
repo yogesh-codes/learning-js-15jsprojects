@@ -59,12 +59,19 @@ img{
 button {
     border: none;
     border-radius: .2em;
+    
     margin: 0px .2em;
+    padding: 0px 1em;
 
     background-color: var(--color-primary-dark);
     color: white;
 
     transition: background-color .15s ease-in , color .15s ease;
+
+    font-size: 1.5em;
+    line-height: 1.75em;
+    text-align: center;
+
 }
 
 button:hover {
@@ -163,7 +170,7 @@ nav ul li:hover::after {
 }
 
 
-.image1-container {
+.container {
     position: relative;
     background-color: #55a2ff;
     
